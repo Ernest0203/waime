@@ -1,0 +1,139 @@
+h-color = #b9b963
+main-color = #696958
+bg-color = rgba(186, 186, 173, .6)
+box-shadow = 0px 4px 10px 2px rgba(179,179,179,1)
+
+@import './fonts/fonts.styl'
+@import '../navbar/navbar.styl'
+@import '../cart/cart.styl'
+@import '../pages/products/products.styl'
+@import '../pages/contacts/contacts.styl'
+
+@import '../about/about.styl'
+@import '../portfolio/portfolio.styl'
+@import '../signin/signin.styl'
+@import '../skills/skills.styl'
+
+* 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+a
+	text-decoration: none
+	transition: .2s
+li
+	list-style: none
+h1,h2,h3,h4,h5,h6 
+	text-align: center
+	text-transform: uppercase
+
+body
+	background-image: url('images/bg1.png')
+	color main-color
+	font-family 'OpenSans-Regular', 'Arial', sans-serif
+		
+.container
+	//padding: 1% 10%
+	@media (max-width: 1281px)
+		padding: 1% 2%
+	
+.header
+	background-color: bg-color
+	border-radius: 10px
+	box-shadow box-shadow
+	display: flex
+	justify-content: space-between
+	margin-bottom: 30px
+	padding: 25px
+	.logo
+		height: 50px
+		width: 50px
+
+.content-wrapper
+	background-color: bg-color
+	border-radius: 10px
+	box-shadow: box-shadow
+	//height: calc(100% - 250px)
+	padding: 25px
+	//overflow-y: scroll
+	position: relative
+	body::-webkit-scrollbar-track {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	&__title
+		margin-bottom: 30px
+
+.content-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.content-wrapper::-webkit-scrollbar-track {
+	border-radius: 10px
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.content-wrapper::-webkit-scrollbar-thumb {
+	border-radius: 10px
+  background-color: darken(bg-color, 30%);
+  outline: 1px solid slategrey;
+}
+
+.footer
+	background-color bg-color
+	border-radius: 10px
+	box-shadow box-shadow
+	display: flex
+	align-items: center
+	margin-top: 30px
+	padding: 25px
+	.social 
+		margin 0 auto
+	// .email
+	// 	border-right: 1px solid main-color
+	// 	margin-right: 1.5%
+	// 	padding: 2px 1.5% 0 0
+	// 	span 
+	// 		font-size: 18px
+	// 		margin-right: 10px
+	// 	a 
+	// 		color #149daf
+	// 		font-size: 18px
+	// .skype
+	// 	padding-top: 2px
+	// 	span 
+	// 		font-size: 18px
+	// 		margin-right: 10px
+	// 	a 
+	// 		color #149daf
+	// 		font-size: 18px
+	
+.signin-popup
+	background-color rgba(0,0,0,.5)
+	display: flex
+	height: 100vh
+	width: 100vw
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	z-index: -1
+	&--show
+		opacity: 1
+		z-index: 1
+		transition: .3s
+	&--hide
+		display: none
+
+.btn-link
+	background-color: #efe778
+	border: 1px solid transparent
+	border-radius: 10px
+	color: main-color
+	font-size: 13px
+	margin-right: 10px
+	padding: 5px
+	text-align: center
+	text-transform: uppercase
+	&:hover
+		background-color transparent
+		border: 1px solid #efe778
+		color: #efe778

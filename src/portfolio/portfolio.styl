@@ -1,0 +1,110 @@
+.portfolio
+	background-color: bg-color
+	border-radius: 10px 0 0 10px
+	box-shadow: box-shadow
+	height: calc(100% - 250px)
+	padding: 25px
+	overflow-y: scroll
+	position: relative
+	body::-webkit-scrollbar-track {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	&__title
+		margin-bottom: 30px
+	.empty
+		font-weight: bold
+		margin: auto
+		padding-top: 100px
+		text-align: center
+		text-transform: uppercase
+
+.portfolio-old
+	&__title
+		margin-bottom: 20px
+	&__list
+		display flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__list-item
+		border-radius: 5px
+		height: 250px
+		margin-bottom: 30px
+		overflow: hidden
+		width: 30%
+		transition: 0.25s
+		position: relative
+		&:hover
+			transform scale(1.1)
+			.content 
+				background-color: rgba(0,0,0,.5)
+				opacity: 1
+		.image
+			height: 150%
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+		&--no-data
+			font-weight: bold
+			margin: auto
+			padding-top: 100px
+			text-transform: uppercase
+	
+	.content
+		height: 100%
+		width: 100%
+		opacity: 0
+		padding: 20px 0
+		position: relative
+		transition: .25s
+		z-index: 5
+		&:hover
+			.title, .technologies, .btn-group
+				opacity: 1
+				transition: .25s
+		.title
+			background-color: #fff
+			border-radius: 0 10px 10px 0
+			margin-bottom: 30px
+			padding: 5px 0
+			width: 60%
+			opacity: 1
+		.technologies
+			background-color: #fff
+			border-radius: 10px 0 0 10px
+			float: right
+			padding: 5px 0
+			width: 60%
+			opacity: 1
+		.btn-group
+			text-align: center
+			width: 100%
+			position: absolute
+			bottom: 20px
+			opacity: 1
+		.btn-link
+			background-color: #efe778
+			border: 1px solid transparent
+			border-radius: 10px
+			color: main-color
+			font-size: 13px
+			margin-right: 10px
+			padding: 5px
+			text-transform: uppercase
+			&:hover
+				background-color transparent
+				border: 1px solid #efe778
+				color: #efe778
+
+.portfolio::-webkit-scrollbar {
+  width: 6px;
+}
+.portfolio::-webkit-scrollbar-track {
+	border-radius: 10px
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.portfolio::-webkit-scrollbar-thumb {
+	border-radius: 10px
+  background-color: darken(bg-color, 30%);
+  outline: 1px solid slategrey;
+}

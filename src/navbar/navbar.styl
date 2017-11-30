@@ -1,0 +1,60 @@
+.nav-list
+	display: flex
+	flex-grow: 1
+	align-items: center
+	&__item
+		background-color: transparent 
+		border: 1px solid #fff
+		border-radius: 10px
+		color: #fff
+		font-size: 15px
+		line-height: 40px
+		margin-left: 2%
+		padding: 0 15px
+		text-transform: uppercase
+		&:hover
+			background-color #fff
+			color: main-color
+		&--active
+			background-color #fff
+			color: main-color
+		&:nth-child(1)
+			margin-left: 0
+	.cart-btn
+		display: flex
+		justify-content: flex-end
+		flex-grow: 2
+		.cart-link
+			display: block
+			position: relative
+			img
+				height: 35px
+				width: 35px
+			&__counter
+				background-color: red
+				border-radius: 50%
+				display: none
+				align-items: center
+				justify-content: center
+				height: 18px
+				width: 18px
+				position: absolute
+				right: 0
+				bottom: 0
+				&.-active
+					display: flex
+			&__count
+				font-size: 15px
+				font-weight: 700
+				color: white
+	.signin-link
+		background-color #efe778
+		border: 1px solid transparent
+		color: main-color
+		cursor: pointer
+		text-transform: uppercase
+		&:hover 
+			background-color transparent
+			border: 1px solid #efe778
+			color: #efe778
+	

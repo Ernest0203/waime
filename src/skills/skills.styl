@@ -1,0 +1,99 @@
+.skills
+	background-color bg-color
+	border-radius: 10px
+	box-shadow box-shadow
+	padding: 25px
+	&__title
+		margin-bottom: 30px
+	&__group
+		display: flex
+		justify-content: space-between
+	&__group-item
+		width: 30%
+	&__heading
+		font-size: 20px
+		margin-bottom: 15px
+	&__list
+		margin-bottom: 10px
+		padding: 10px
+	&__list-item
+		position: relative
+		&--no-data
+			font-weight: 700 
+			padding: 5px 
+			text-align: center
+			text-transform: uppercase
+		p 
+			font-size: 18px 
+			padding: 5px
+			text-align: center
+			text-transform: uppercase
+			&:hover
+				background-color: rgba(186, 186, 173, 0.5)
+			&:focus
+				background-color: rgba(186, 186, 173, 0.5)
+			&.empty
+				&:focus
+					outline-color: red
+					background-color: rgba(186, 186, 173, 0.5)
+					animation: empty .15s 
+					animation-iteration-count: 2
+					position: relative
+					@keyframes empty {
+						0% {left: 10px}
+						100% {right: 10px}
+					}
+		&:hover
+			.btn-remove
+				display: inline
+	&__add-form
+		text-align: center
+	&__add-field
+		background-color: rgba(186, 186, 173, 0.5)
+		border-radius: 10px 0 0 10px
+		border: none
+		color: main-color
+		font-size: 16px
+		height: 36px
+		line-height: 36px
+		outline: none
+		padding: 0 10px
+		width: 55%
+		transition: 0.3s
+		&:focus
+			background-color: rgba(186, 186, 173, 1)
+	&__add-btn
+		background-color: #efe778
+		border: 1px solid transparent
+		border-radius: 0 10px 10px 0
+		color: main-color
+		cursor: pointer
+		height: 36px
+		line-height: 36px
+		padding: 0 2%
+		text-transform: uppercase
+		transition: .2s
+		&:hover
+			border: 1px solid #efe778
+			background-color: transparent
+			color: #efe778
+	.btn-remove
+		color: red
+		display: none
+		font-size: 30px
+		position: absolute
+		right: 5px
+		top: -12%
+
+::-webkit-input-placeholder { 
+  color: #ef4614;
+}
+::-moz-placeholder { 
+  color: #ef4614;
+}
+:-ms-input-placeholder { 
+  color: #ef4614;
+}
+:-moz-placeholder { 
+  color: #ef4614;
+}
