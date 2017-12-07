@@ -1,6 +1,6 @@
 h-color = #b9b963
 main-color = #696958
-bg-color = rgba(186, 186, 173, .6)
+bg-color = rgba(249, 249, 249, .6)
 box-shadow = 0px 4px 10px 2px rgba(179,179,179,1)
 
 @import './fonts/fonts.styl'
@@ -8,11 +8,6 @@ box-shadow = 0px 4px 10px 2px rgba(179,179,179,1)
 @import '../cart/cart.styl'
 @import '../pages/products/products.styl'
 @import '../pages/contacts/contacts.styl'
-
-@import '../about/about.styl'
-@import '../portfolio/portfolio.styl'
-@import '../signin/signin.styl'
-@import '../skills/skills.styl'
 
 * 
 	margin: 0
@@ -32,15 +27,16 @@ body
 	background-image: url('images/bg1.png')
 	color main-color
 	font-family 'OpenSans-Regular', 'Arial', sans-serif
+	min-width: 350px
 		
 .container
-	//padding: 1% 10%
+	padding: 1% 1%
 	@media (max-width: 1281px)
-		padding: 1% 2%
+		padding: 1% 1%
 	
 .header
 	background-color: bg-color
-	border-radius: 10px
+	border-radius: 3px
 	box-shadow box-shadow
 	display: flex
 	justify-content: space-between
@@ -52,8 +48,8 @@ body
 
 .content-wrapper
 	background-color: bg-color
-	border-radius: 10px
 	box-shadow: box-shadow
+	border-radius: 3px
 	//height: calc(100% - 250px)
 	padding: 25px
 	//overflow-y: scroll
@@ -79,7 +75,7 @@ body
 
 .footer
 	background-color bg-color
-	border-radius: 10px
+	border-radius: 3px
 	box-shadow box-shadow
 	display: flex
 	align-items: center

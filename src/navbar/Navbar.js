@@ -25,10 +25,10 @@ class Navbar extends Component {
 
     return (
       <div className="nav-list">
-        <NavLink to="/about" className="nav-list__item">About</NavLink>
-        <NavLink to="/company" className="nav-list__item">Ценности компании</NavLink>
+        {/* <NavLink to="/about" className="nav-list__item">About</NavLink> */}
+        {/* <NavLink to="/company" className="nav-list__item">Ценности компании</NavLink> */}
         <NavLink to="/products" className="nav-list__item">Каталог</NavLink>
-        <NavLink to="/delivery" className="nav-list__item">Оплата и доставка</NavLink>
+        {/* <NavLink to="/delivery" className="nav-list__item">Оплата и доставка</NavLink> */}
         <NavLink to="/contacts" className="nav-list__item">Контакты</NavLink>
         <div className="cart-btn">
           <a href="" className="cart-link" onClick={(e) => this.openCart(e)}>

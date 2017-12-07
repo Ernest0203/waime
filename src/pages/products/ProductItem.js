@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import img from './images/test.jpg';
-
 class ProductItem extends Component {
 	constructor(props) {
 		super(props);
@@ -47,7 +45,7 @@ class ProductItem extends Component {
 		}
 				
     return (
-      <li className="product-item" onClick={(e) => this.openPopup(e, { name, description, image })}>
+      <li className="product-item" /*onClick={(e) => this.openPopup(e, { name, description, image })}*/>
 				<div className="overlay">
 					<a href="" className="overlay__btn btn-link">Описание</a>
 				</div>

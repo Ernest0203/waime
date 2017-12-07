@@ -4,8 +4,6 @@ import DatabaseController from '../../database/databaseController.js';
 
 import ProductItem from './ProductItem';
 
-import img from './images/test.jpg';
-
 class ProductsList extends Component {
 	constructor(props) {
 		super(props);

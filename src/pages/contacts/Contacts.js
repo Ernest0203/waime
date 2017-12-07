@@ -13,9 +13,6 @@ class Products extends Component {
       <section className="contacts">
 				<h2 className="contacts__title">Контакты</h2>
 				<div className="contacts__list" >
-					<p>Telegram: </p>
-					<p>Email</p>
-					<p>instagram</p>
 				</div>
 				<div className="feedback">
 					<h4 className="feedback__title">Задать вопрос или узнать больше — напишите нам!</h4>
